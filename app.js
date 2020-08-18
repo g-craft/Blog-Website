@@ -7,7 +7,7 @@ const _ = require('lodash');
 const mongoose = require("mongoose");
 
 const app = express();
-mongoose.connect('mongodb+srv://demo:demo1234@cluster0.10t0c.mongodb.net/blogDB?retryWrites=true&w=majority', {
+mongoose.connect(MONGO_DB_ATLAS_LINK, {
   useNewUrlParser: true
 });
 

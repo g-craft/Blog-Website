@@ -86,7 +86,6 @@ app.get("/posts/:postId", function(req, res) {
   });
 });
 
-
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+app.listen(process.env.PORT || 3000, function() { //process.env.PORT to launch on Heroku server, 3000 to launch localy
+  console.log("app is running on port 3000");
 });

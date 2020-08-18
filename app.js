@@ -7,7 +7,7 @@ const _ = require('lodash');
 const mongoose = require("mongoose");
 
 const app = express();
-mongoose.connect(MONGO_DB_ATLAS_LINK, {
+mongoose.connect(process.env.MONGO_DB_ATLAS_LINK, {
   useNewUrlParser: true
 });
 
